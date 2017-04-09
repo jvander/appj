@@ -32,6 +32,9 @@
               <input ng-model="vm.name">
       </md-input-container>
     </div>
-</div>
+    <div ng-repeat="pessoa in vm.listaPessoa | filter:vm.name">
+        <span>{{$index}} - {{pessoa.nome}}</span>
+    </div>
+</md-content>
 </body>
 </html>

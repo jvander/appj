@@ -6,8 +6,15 @@
 
         function appController() {
              var self = this;
-             this.name = '';
-        };
+             self.name = '';
+             self.listaPessoa = [
+               {nome: "Jesus"},
+               {nome: "Maria"},
+               {nome: "Jose"},
+               {nome: "Paulo"}
+             ]
+           };
+
 
 
 })();
